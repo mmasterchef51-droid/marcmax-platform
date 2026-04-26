@@ -15,6 +15,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "MARCMAX | Home of the MARCO Neural Army - Autonomous AI Orchestration",
   description: "MARCMAX: Home of the MARCO Neural Army. 50,000+ Lines of Intelligence. 24/7 Autonomy. Enterprise-Grade AI Orchestration.",
+  verification: {
+    google: "2DskvtxIUZKyrVpEpjfnM2O-AJsEUTzbuo96gYvqDhg",
+  },
 };
 
 export default function RootLayout({

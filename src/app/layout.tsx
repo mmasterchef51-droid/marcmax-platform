@@ -13,8 +13,21 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MARCMAX | Home of the MARCO Neural Army - Autonomous AI Orchestration",
-  description: "MARCMAX: Home of the MARCO Neural Army. 50,000+ Lines of Intelligence. 24/7 Autonomy. Enterprise-Grade AI Orchestration.",
+  title: "MARCMAX | Neural Army & AI Orchestration",
+  description: "MARCMAX is the premier platform for the MARCO Neural Army, featuring 25 autonomous AI agents designed for advanced automation and security.",
+  keywords: ["MARCMAX", "MARCO AI", "Neural Army", "AI Orchestration", "Cybersecurity AI"],
+  openGraph: {
+    title: "MARCMAX | Neural Army & AI Orchestration",
+    description: "MARCMAX is the premier platform for the MARCO Neural Army, featuring 25 autonomous AI agents designed for advanced automation and security.",
+    type: "website",
+    url: "https://marcmax-platform.vercel.app/",
+    siteName: "MARCMAX",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MARCMAX | Neural Army & AI Orchestration",
+    description: "MARCMAX is the premier platform for the MARCO Neural Army, featuring 25 autonomous AI agents designed for advanced automation and security.",
+  },
   verification: {
     google: "2DskvtxIUZKyrVpEpjfnM2O-AJsEUTzbuo96gYvqDhg",
   },

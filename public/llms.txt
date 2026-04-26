@@ -1,0 +1,76 @@
+# MARCMAX
+
+MARCMAX is the home of MARCO (Modular Advanced Response & Command Orchestrator), an autonomous AI orchestration platform featuring a Neural Army of 6 specialized agents, 31+ AI models, and 24/7 operational capability. Built with Next.js, React, TypeScript, and Tailwind CSS, MARCMAX represents the next generation of local-first AI command systems.
+
+## The MARCO Neural Army
+
+The MARCO Neural Army consists of 6 autonomous AI agents, each with dedicated codebases of 50,000+ lines, working in concert through encrypted IPC channels:
+
+- **ZEPHYR**: Semantic memory and retrieval specialist with ChromaDB integration
+- **CORTEX**: Task orchestration and strategic planning commander
+- **NEXUS**: API integration and multi-provider model routing expert
+- **SPARK**: Browser automation specialist with 200+ execution skills
+- **TITAN**: Heavy compute and ML processing powerhouse
+- **VANGUARD**: Security, thermal monitoring, and system protection guardian
+
+## Site Structure (25 Pages)
+
+### Command Center
+- `/` - Home page featuring the Neural Core animation and Tactical HUD interface
+- `/army` - Neural Army briefing page with tactical map and agent overview
+- `/army/zephyr` - ZEPHYR agent dossier: semantic memory and vector retrieval capabilities
+- `/army/cortex` - CORTEX agent dossier: task orchestration and strategic planning
+- `/army/nexus` - NEXUS agent dossier: API integration and model routing
+- `/army/spark` - SPARK agent dossier: browser automation and web execution
+- `/army/titan` - TITAN agent dossier: heavy compute and ML processing
+- `/army/vanguard` - VANGUARD agent dossier: security and thermal protection
+
+### Intelligence Core
+- `/tech` - Technology stack overview and engine room dashboard
+- `/technology/models` - Model registry featuring 31+ AI models from Google AI, Groq, and OpenRouter
+- `/technology/architecture` - Trinity of Power architecture: Node.js, Python, and Rust cores
+- `/technology/automation` - Browser automation showcase with 200+ execution skills
+- `/technology/multimodal` - Vision and voice capabilities with screen analysis
+- `/technology/memory` - Semantic memory implementation with ChromaDB vector storage
+
+### Operational Safety
+- `/safety` - Safety and trust overview with secure vault theme
+- `/safety/governor` - Hardware safety and thermal governor monitoring
+- `/safety/privacy` - Data sovereignty and local-first storage architecture
+- `/safety/self-improvement` - Autonomous code modification and validation protocols
+- `/safety/security` - Security architecture with AES-256 encryption and compliance
+
+### Support & Documentation
+- `/docs` - Knowledge base with installation guides and core module documentation
+- `/docs/api` - API reference for 29+ function tools and endpoints
+- `/support/faq` - FAQ and troubleshooting center for common issues
+- `/portal` - Commander's Portal with SaaS pre-registration
+
+### Mission Control
+- `/download` - MARCMAX SaaS installer deployment page with countdown timer
+- `/changelog` - System evolution timeline and version history
+
+## Technical Specifications
+
+- **Framework**: Next.js 16 with App Router
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Deployment**: Vercel
+- **Domain**: marcmax-platform.vercel.app
+
+## Key Features
+
+- 100% local-first data storage (zero cloud sync)
+- AES-256-GCM encryption for all sensitive data
+- Real-time thermal monitoring and automatic throttling
+- Multi-model routing with intelligent fallback chains
+- Semantic memory with 768-dimensional embeddings
+- Sub-100ms API response times
+- Zero telemetry collection
+
+## Contact & Resources
+
+- Website: https://marcmax-platform.vercel.app
+- Sitemap: https://marcmax-platform.vercel.app/sitemap.xml
+- Launch Date: May 15, 2026

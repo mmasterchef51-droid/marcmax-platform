@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020617;
+  --foreground: #e2e8f0;
+  --cyan: #00f2ff;
+  --cyan-glow: rgba(0, 242, 255, 0.4);
+  --amber: #ffaa00;
+  --amber-glow: rgba(255, 170, 0, 0.4);
+  --grid-color: rgba(0, 242, 255, 0.03);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cyan: var(--cyan);
+  --color-cyan-glow: var(--cyan-glow);
+  --color-amber: var(--amber);
+  --color-amber-glow: var(--amber-glow);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+}
+
+/* Animated Grid Background */
+.grid-bg {
+  background-image: 
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: gridPulse 4s ease-in-out infinite;
+}
+
+@keyframes gridPulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Scanning Line Animation */
+.scanning-line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--cyan) 20%,
+    var(--cyan) 80%,
+    transparent 100%
+  );
+  box-shadow: 0 0 20px var(--cyan-glow), 0 0 40px var(--cyan-glow);
+  animation: scan 3s linear infinite;
+}
+
+@keyframes scan {
+  0% { top: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* Blinking Dot */
+.blink-dot {
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Text Glow Effects */
+.text-glow-cyan {
+  text-shadow: 0 0 20px var(--cyan-glow), 0 0 40px var(--cyan-glow);
+}
+
+.text-glow-amber {
+  text-shadow: 0 0 20px var(--amber-glow), 0 0 40px var(--amber-glow);
+}
+
+/* Button Glow */
+.btn-glow-cyan {
+  box-shadow: 0 0 20px var(--cyan-glow), inset 0 0 20px rgba(0, 242, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-glow-cyan:hover {
+  box-shadow: 0 0 30px var(--cyan-glow), 0 0 60px var(--cyan-glow), inset 0 0 30px rgba(0, 242, 255, 0.2);
+}
+
+.btn-glow-amber {
+  box-shadow: 0 0 20px var(--amber-glow), inset 0 0 20px rgba(255, 170, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-glow-amber:hover {
+  box-shadow: 0 0 30px var(--amber-glow), 0 0 60px var(--amber-glow), inset 0 0 30px rgba(255, 170, 0, 0.2);
+}
+
+/* Neural Core Pulse */
+.neural-pulse {
+  animation: neuralPulse 2s ease-in-out infinite;
+}
+
+@keyframes neuralPulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+}
+
+/* Rotating Rings */
+.rotate-slow {
+  animation: rotateSlow 20s linear infinite;
+}
+
+.rotate-reverse {
+  animation: rotateReverse 15s linear infinite;
+}
+
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotateReverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+/* Telemetry Scroll */
+.telemetry-scroll {
+  animation: telemetryScroll 20s linear infinite;
+}
+
+@keyframes telemetryScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Typewriter Cursor */
+.typewriter-cursor::after {
+  content: '|';
+  animation: cursorBlink 1s step-end infinite;
+  color: var(--cyan);
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00f2ff;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00d4e0;
+}
+
+/* Slow spin animation */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}

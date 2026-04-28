@@ -8,16 +8,17 @@ const footerLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Features", href: "/features" },
+  { label: "Plans", href: "/plans" },
   { label: "Army", href: "/army" },
   { label: "Docs", href: "/docs" },
   { label: "Contact", href: "/contact" },
 ];
 
 const sitemapLinks = [
+  { label: "Plans", href: "/plans", icon: Shield },
   { label: "Docs", href: "/docs", icon: Book },
   { label: "Features", href: "/features", icon: Terminal },
   { label: "About", href: "/about", icon: Globe },
-  { label: "Contact", href: "/contact", icon: Shield },
 ];
 
 export default function Footer() {

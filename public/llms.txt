@@ -1,109 +1,15 @@
 # MARCORAEX
+The Command Center for the MARCO Neural Army.
 
-MARCORAEX is the premier command center for the MARCO Neural Army, featuring 25 autonomous agents designed for high-level tactical automation. Built with Next.js, React, TypeScript, and Tailwind CSS, MARCORAEX Core orchestrates the most capable autonomous workforce ever deployed. All operations run on secure, private MARCORAEX infrastructure with zero third-party dependencies.
+## Mission
+To provide autonomous AI orchestration and offensive security automation via a unified 25-agent military-grade framework.
 
-## The MARCO Neural Army (25 Agents)
+## Core Services
+- The General: Strategic planning and task delegation.
+- The Soldier: Execution and tactical automation.
+- Tactical Plans: Tiered access from Recruit (Trial) to Elite.
 
-The MARCO Neural Army consists of 25 autonomous agents working in perfect harmony through MARCORAEX Core:
-
-- **The General**: Master orchestrator coordinating all 24 agents
-- **The Soldier**: Security operations and threat neutralization
-- **The Architect**: System design and infrastructure scaling
-- **The Scribe**: Automatic documentation and knowledge management
-- **The Scout**: Reconnaissance and intelligence gathering
-- **The Engineer**: Multi-language development and code optimization
-- **The Warden**: Zero-trust access control and identity management
-- **The Oracle**: Data analysis and predictive intelligence
-- **The Courier**: Secure messaging and communications
-- **The Sentinel**: 24/7 monitoring and anomaly detection
-- **The Librarian**: Data management and query optimization
-- **The Weaver**: Network operations and connectivity
-- **The Chronos**: Task scheduling and temporal orchestration
-- **The Auditor**: Compliance automation and regulation enforcement
-- **The Curator**: UI/UX management and accessibility
-- **The Nexus**: Integration and API ecosystem management
-- **The Forge**: Build automation and deployment pipelines
-- **The Vault**: Secrets management and credential security
-- **The Horizon**: Global operations and multi-region orchestration
-- **The Spark**: Workflow automation and task execution
-- **The Beacon**: Smart alerting and notification dispatch
-- **The Kernel**: Core systems and hardware optimization
-- **The Archive**: Backup management and disaster recovery
-- **The Console**: CLI operations and shell scripting
-- **The Bridge**: Cloud management across all providers
-
-## Site Structure
-
-### Core Pages
-- `/` - Homepage with Neural Core animation, Tactical HUD interface, and Pricing section (2-Day Free Trial + Pro/Elite)
-- `/about` - Mission briefing: Solving AI fragmentation through unified Neural Army command
-- `/features` - Complete roster of 25 autonomous agents with capabilities overview
-- `/plans` - 6-tier subscription system: Recruit (Free), Soldier ($15), Squad Leader ($45), General ($150), Elite ($500), and Tactical PAYG
-- `/docs` - Operational guide for commanding the MARCO Neural Army
-- `/contact` - Secure contact form for launch inquiries and enterprise deployment
-
-### Access Tiers & Feature Gating
-- **Tier 0 - Recruit (2-Day Free Trial)**: 10 requests/day, 50k tokens, no downloads
-- **Tier 1 - Soldier ($15/month)**: 50 requests/day, 250k tokens, basic downloads
-- **Tier 2 - Squad Leader ($45/month)**: 200 requests/day, 1M tokens, high-speed processing
-- **Tier 3 - General ($150/month)**: 1,000 requests/day, 5M tokens, priority support
-- **Tier 4 - Elite ($500/month)**: 5,000 requests/day, 25M tokens, dedicated instance
-- **Tier 5 - Tactical PAYG ($2 + $0.02/1k tokens)**: Unlimited usage-based billing
-
-### Usage Tracking Components
-- **NeuralDashboard**: Real-time display of daily requests remaining and token capacity
-- **DownloadManager**: Plan-gated download utility with Tactical Lock for Recruit tier
-- **UpgradeModal**: Modal directing users to upgrade when accessing locked features
-
-### Neural Army Section
-- `/army` - Neural Army briefing page with tactical map and agent overview
-
-### Mission Control
-- `/download` - Download Vault: High-security file extraction portal with tier-based access control, scanning animations, and Usage Shield overlay
-- `/changelog` - System evolution timeline and version history
-
-### Capabilities
-- `/tech` - MARCORAEX Capabilities Core with proprietary neural engine details
-
-### Support
-- `/portal` - Commander's Portal with SaaS pre-registration
-
-## Technical Specifications
-
-- **Framework**: Next.js 16 with App Router (SSR for AI visibility)
-- **Frontend**: React, TypeScript, Tailwind CSS
-- **Architecture**: Server-Side Rendering for maximum AI crawler visibility
-- **Neural Engine**: MARCORAEX Core-Alpha Engine with proprietary neural logic
-- **Security**: 100% local-first, AES-256-GCM encryption, zero external APIs
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Deployment**: Vercel
-- **Domain**: https://marcorex-ai.vercel.app/
-
-## Key Features
-
-- 25 autonomous agents working in perfect harmony
-- MARCORAEX Core orchestration with proprietary neural logic
-- 100% local-first data storage (zero cloud sync)
-- AES-256-GCM encryption for all sensitive data
-- All models run on secure, private MARCORAEX servers
-- Zero third-party dependencies or external API calls
-- 2-Day Free Trial with 10 tasks/day limit
-- Pro/Elite access tiers (Coming Soon)
-- Sub-50ms response times
-- Zero telemetry collection
-- Complete data sovereignty
-
-## AI Visibility & SEO
-
-- **llms.txt**: AI-readable site summary for LLM crawlers
-- **robots.txt**: Explicit Allow for GPTBot, Claude-Web, PerplexityBot
-- **Sitemap**: All routes included with priority weighting
-- **Schema Markup**: JSON-LD Organization schema for search engines
-
-## Contact & Resources
-
-- Website: https://marcorex-ai.vercel.app/
-- Sitemap: https://marcorex-ai.vercel.app/sitemap.xml
-- Contact: command@marcoraex.ai
-- Launch: Q3 2026
+## Links
+- About: https://marcorex-ai.vercel.app/about
+- Capabilities: https://marcorex-ai.vercel.app/features
+- Pricing: https://marcorex-ai.vercel.app/plans

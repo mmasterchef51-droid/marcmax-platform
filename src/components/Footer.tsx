@@ -6,18 +6,18 @@ import Link from "next/link";
 
 const footerLinks = [
   { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Features", href: "/features" },
   { label: "Army", href: "/army" },
-  { label: "Tech", href: "/tech" },
-  { label: "Safety", href: "/safety" },
-  { label: "Download", href: "/download" },
-  { label: "Changelog", href: "/changelog" },
+  { label: "Docs", href: "/docs" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const sitemapLinks = [
   { label: "Docs", href: "/docs", icon: Book },
-  { label: "API", href: "/docs/api", icon: Terminal },
-  { label: "FAQ", href: "/support/faq", icon: Globe },
-  { label: "Portal", href: "/portal", icon: Shield },
+  { label: "Features", href: "/features", icon: Terminal },
+  { label: "About", href: "/about", icon: Globe },
+  { label: "Contact", href: "/contact", icon: Shield },
 ];
 
 export default function Footer() {
@@ -70,7 +70,7 @@ export default function Footer() {
               viewport={{ once: true }}
             >
               <span className="font-mono text-xl font-bold text-[#00f2ff] text-glow-cyan">
-                M.A.R.C.O.
+                MARCORAEX
               </span>
             </motion.div>
 

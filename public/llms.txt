@@ -1,76 +1,91 @@
-# MARCMAX
+# MARCORAEX
 
-MARCMAX is the home of MARCO (Modular Advanced Response & Command Orchestrator), an autonomous AI orchestration platform featuring a Neural Army of 6 specialized agents, 31+ AI models, and 24/7 operational capability. Built with Next.js, React, TypeScript, and Tailwind CSS, MARCMAX represents the next generation of local-first AI command systems.
+MARCORAEX is the premier command center for the MARCO Neural Army, featuring 25 autonomous agents designed for high-level tactical automation. Built with Next.js, React, TypeScript, and Tailwind CSS, MARCORAEX Core orchestrates the most capable autonomous workforce ever deployed. All operations run on secure, private MARCORAEX infrastructure with zero third-party dependencies.
 
-## The MARCO Neural Army
+## The MARCO Neural Army (25 Agents)
 
-The MARCO Neural Army consists of 6 autonomous AI agents, each with dedicated codebases of 50,000+ lines, working in concert through encrypted IPC channels:
+The MARCO Neural Army consists of 25 autonomous agents working in perfect harmony through MARCORAEX Core:
 
-- **ZEPHYR**: Semantic memory and retrieval specialist with ChromaDB integration
-- **CORTEX**: Task orchestration and strategic planning commander
-- **NEXUS**: API integration and multi-provider model routing expert
-- **SPARK**: Browser automation specialist with 200+ execution skills
-- **TITAN**: Heavy compute and ML processing powerhouse
-- **VANGUARD**: Security, thermal monitoring, and system protection guardian
+- **The General**: Master orchestrator coordinating all 24 agents
+- **The Soldier**: Security operations and threat neutralization
+- **The Architect**: System design and infrastructure scaling
+- **The Scribe**: Automatic documentation and knowledge management
+- **The Scout**: Reconnaissance and intelligence gathering
+- **The Engineer**: Multi-language development and code optimization
+- **The Warden**: Zero-trust access control and identity management
+- **The Oracle**: Data analysis and predictive intelligence
+- **The Courier**: Secure messaging and communications
+- **The Sentinel**: 24/7 monitoring and anomaly detection
+- **The Librarian**: Data management and query optimization
+- **The Weaver**: Network operations and connectivity
+- **The Chronos**: Task scheduling and temporal orchestration
+- **The Auditor**: Compliance automation and regulation enforcement
+- **The Curator**: UI/UX management and accessibility
+- **The Nexus**: Integration and API ecosystem management
+- **The Forge**: Build automation and deployment pipelines
+- **The Vault**: Secrets management and credential security
+- **The Horizon**: Global operations and multi-region orchestration
+- **The Spark**: Workflow automation and task execution
+- **The Beacon**: Smart alerting and notification dispatch
+- **The Kernel**: Core systems and hardware optimization
+- **The Archive**: Backup management and disaster recovery
+- **The Console**: CLI operations and shell scripting
+- **The Bridge**: Cloud management across all providers
 
-## Site Structure (25 Pages)
+## Site Structure
 
-### Command Center
-- `/` - Home page featuring the Neural Core animation and Tactical HUD interface
+### Core Pages
+- `/` - Homepage with Neural Core animation, Tactical HUD interface, and Pricing section (2-Day Free Trial + Pro/Elite)
+- `/about` - Mission briefing: Solving AI fragmentation through unified Neural Army command
+- `/features` - Complete roster of 25 autonomous agents with capabilities overview
+- `/docs` - Operational guide for commanding the MARCO Neural Army
+- `/contact` - Secure contact form for launch inquiries and enterprise deployment
+
+### Neural Army Section
 - `/army` - Neural Army briefing page with tactical map and agent overview
-- `/army/zephyr` - ZEPHYR agent dossier: semantic memory and vector retrieval capabilities
-- `/army/cortex` - CORTEX agent dossier: task orchestration and strategic planning
-- `/army/nexus` - NEXUS agent dossier: API integration and model routing
-- `/army/spark` - SPARK agent dossier: browser automation and web execution
-- `/army/titan` - TITAN agent dossier: heavy compute and ML processing
-- `/army/vanguard` - VANGUARD agent dossier: security and thermal protection
 
-### Intelligence Core
-- `/tech` - Technology stack overview and engine room dashboard
-- `/technology/models` - Model registry featuring 31+ AI models from Google AI, Groq, and OpenRouter
-- `/technology/architecture` - Trinity of Power architecture: Node.js, Python, and Rust cores
-- `/technology/automation` - Browser automation showcase with 200+ execution skills
-- `/technology/multimodal` - Vision and voice capabilities with screen analysis
-- `/technology/memory` - Semantic memory implementation with ChromaDB vector storage
+### Capabilities
+- `/tech` - MARCORAEX Capabilities Core with proprietary neural engine details
 
-### Operational Safety
-- `/safety` - Safety and trust overview with secure vault theme
-- `/safety/governor` - Hardware safety and thermal governor monitoring
-- `/safety/privacy` - Data sovereignty and local-first storage architecture
-- `/safety/self-improvement` - Autonomous code modification and validation protocols
-- `/safety/security` - Security architecture with AES-256 encryption and compliance
-
-### Support & Documentation
-- `/docs` - Knowledge base with installation guides and core module documentation
-- `/docs/api` - API reference for 29+ function tools and endpoints
-- `/support/faq` - FAQ and troubleshooting center for common issues
+### Support
 - `/portal` - Commander's Portal with SaaS pre-registration
-
-### Mission Control
-- `/download` - MARCMAX SaaS installer deployment page with countdown timer
-- `/changelog` - System evolution timeline and version history
 
 ## Technical Specifications
 
-- **Framework**: Next.js 16 with App Router
+- **Framework**: Next.js 16 with App Router (SSR for AI visibility)
 - **Frontend**: React, TypeScript, Tailwind CSS
+- **Architecture**: Server-Side Rendering for maximum AI crawler visibility
+- **Neural Engine**: MARCORAEX Core-Alpha Engine with proprietary neural logic
+- **Security**: 100% local-first, AES-256-GCM encryption, zero external APIs
 - **Animations**: Framer Motion
 - **Icons**: Lucide React
 - **Deployment**: Vercel
-- **Domain**: marcmax-platform.vercel.app
+- **Domain**: https://marcorex-ai.vercel.app/
 
 ## Key Features
 
+- 25 autonomous agents working in perfect harmony
+- MARCORAEX Core orchestration with proprietary neural logic
 - 100% local-first data storage (zero cloud sync)
 - AES-256-GCM encryption for all sensitive data
-- Real-time thermal monitoring and automatic throttling
-- Multi-model routing with intelligent fallback chains
-- Semantic memory with 768-dimensional embeddings
-- Sub-100ms API response times
+- All models run on secure, private MARCORAEX servers
+- Zero third-party dependencies or external API calls
+- 2-Day Free Trial with 10 tasks/day limit
+- Pro/Elite access tiers (Coming Soon)
+- Sub-50ms response times
 - Zero telemetry collection
+- Complete data sovereignty
+
+## AI Visibility & SEO
+
+- **llms.txt**: AI-readable site summary for LLM crawlers
+- **robots.txt**: Explicit Allow for GPTBot, Claude-Web, PerplexityBot
+- **Sitemap**: All routes included with priority weighting
+- **Schema Markup**: JSON-LD Organization schema for search engines
 
 ## Contact & Resources
 
-- Website: https://marcmax-platform.vercel.app
-- Sitemap: https://marcmax-platform.vercel.app/sitemap.xml
-- Launch Date: May 15, 2026
+- Website: https://marcorex-ai.vercel.app/
+- Sitemap: https://marcorex-ai.vercel.app/sitemap.xml
+- Contact: command@marcoraex.ai
+- Launch: Q3 2026

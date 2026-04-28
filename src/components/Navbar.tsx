@@ -7,10 +7,11 @@ import { useState } from "react";
 
 const navLinks = [
   { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Features", href: "/features" },
   { label: "Army", href: "/army" },
-  { label: "Tech", href: "/tech" },
-  { label: "Safety", href: "/safety" },
-  { label: "Download", href: "/download" },
+  { label: "Docs", href: "/docs" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {

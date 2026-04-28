@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TelemetryBar from "@/components/TelemetryBar";
 import CapabilitiesGrid from "@/components/CapabilitiesGrid";
+import PricingSection from "@/components/PricingSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -18,6 +19,9 @@ export default function Home() {
 
       {/* Key Capabilities Grid */}
       <CapabilitiesGrid />
+
+      {/* Pricing Section */}
+      <PricingSection />
 
       {/* Footer with System Signature */}
       <Footer />

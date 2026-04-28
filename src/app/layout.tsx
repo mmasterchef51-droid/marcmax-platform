@@ -14,19 +14,19 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "MARCORAEX | Autonomous AI Orchestration",
-  description: "MARCORAEX is the premier platform for the MARCO Neural Army, featuring 25 autonomous AI agents designed for advanced automation and security.",
-  keywords: ["MARCORAEX", "MARCO AI", "Neural Army", "AI Orchestration", "Cybersecurity AI"],
+  description: "The premier command center for the MARCO Neural Army. Deploying 25 autonomous agents for high-level tactical automation.",
+  keywords: ["MARCORAEX", "MARCO AI", "Neural Army", "AI Orchestration", "Autonomous Agents", "MARCORAEX Core"],
   openGraph: {
     title: "MARCORAEX | Autonomous AI Orchestration",
-    description: "MARCORAEX is the premier platform for the MARCO Neural Army, featuring 25 autonomous AI agents designed for advanced automation and security.",
+    description: "The premier command center for the MARCO Neural Army. Deploying 25 autonomous agents for high-level tactical automation.",
     type: "website",
-    url: "https://marcoraex.vercel.app/",
+    url: "https://marcorex-ai.vercel.app/",
     siteName: "MARCORAEX",
   },
   twitter: {
     card: "summary_large_image",
     title: "MARCORAEX | Autonomous AI Orchestration",
-    description: "MARCORAEX is the premier platform for the MARCO Neural Army, featuring 25 autonomous AI agents designed for advanced automation and security.",
+    description: "The premier command center for the MARCO Neural Army. Deploying 25 autonomous agents for high-level tactical automation.",
   },
   verification: {
     google: "2DskvtxIUZKyrVpEpjfnM2O-AJsEUTzbuo96gYvqDhg",
@@ -38,9 +38,9 @@ const organizationSchema = {
   "@type": "Organization",
   "name": "MARCORAEX",
   "alternateName": "MARCO Neural Army",
-  "description": "MARCORAEX is the home of MARCO (Modular Advanced Response & Command Orchestrator), an autonomous AI orchestration platform featuring a Neural Army of 6 specialized agents, 31+ AI models, and 24/7 operational capability with local-first architecture and zero cloud dependency.",
-  "url": "https://marcoraex.vercel.app/",
-  "logo": "https://marcoraex.vercel.app/icon-192x192.png",
+  "description": "MARCORAEX is the premier command center for the MARCO Neural Army, featuring 25 autonomous agents for high-level tactical automation and MARCORAEX Core orchestration capabilities.",
+  "url": "https://marcorex-ai.vercel.app/",
+  "logo": "https://marcorex-ai.vercel.app/icon-192x192.png",
   "foundingDate": "2026-05-15",
   "sameAs": [
     "https://github.com/mmasterchef51-droid/marcoraex"
@@ -51,26 +51,25 @@ const organizationSchema = {
     "Machine Learning",
     "AI Orchestration",
     "Autonomous Systems",
-    "Browser Automation",
-    "Semantic Memory",
-    "Local-First Architecture"
+    "Neural Army",
+    "MARCORAEX Core",
+    "Tactical Automation"
   ],
   "offers": {
     "@type": "Product",
-    "name": "MARCORAEX SaaS Platform",
-    "description": "Enterprise-grade AI orchestration platform with 6 neural agents, 31+ AI models, and 24/7 autonomous operation",
+    "name": "MARCORAEX Command Platform",
+    "description": "Enterprise-grade AI orchestration platform with 25 autonomous agents and MARCORAEX Core neural logic",
     "releaseDate": "2026-05-15",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": ["Windows", "macOS", "Linux"],
     "featureList": [
-      "6 Neural Army Agents",
-      "31+ AI Models",
-      "Semantic Memory with ChromaDB",
-      "Browser Automation (200+ skills)",
+      "25 Neural Army Agents",
+      "MARCORAEX Core Logic",
+      "2-Day Free Trial",
+      "Pro/Elite Access Tiers",
+      "Tactical Automation",
       "AES-256 Encryption",
-      "Local-First Architecture",
-      "Thermal Protection",
-      "Multi-Model Routing"
+      "Local-First Architecture"
     ]
   }
 };

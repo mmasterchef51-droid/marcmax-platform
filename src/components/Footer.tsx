@@ -34,7 +34,7 @@ export default function Footer() {
           >
             <Cpu className="w-5 h-5 text-[#00f2ff]" />
             <span className="font-mono text-sm text-[#00f2ff]/80">
-              MARCMAX SYSTEMS v7.0.0
+              MARCORAEX SYSTEMS v7.0.0
             </span>
             <span className="hidden md:inline text-[#00f2ff]/40">|</span>
             <span className="font-mono text-sm text-[#ffaa00] flex items-center gap-2">
@@ -135,7 +135,7 @@ export default function Footer() {
                 </Link>
               </div>
               <p className="font-mono text-xs text-gray-500">
-                © 2026 MARCMAX Systems. Powered by MARCO v7.0.0.
+                © 2026 MARCORAEX Systems. Powered by MARCO v7.0.0.
               </p>
             </div>
           </motion.div>

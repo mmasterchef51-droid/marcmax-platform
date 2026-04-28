@@ -13,20 +13,20 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MARCMAX | Neural Army & AI Orchestration",
-  description: "MARCMAX is the premier platform for the MARCO Neural Army, featuring 25 autonomous AI agents designed for advanced automation and security.",
-  keywords: ["MARCMAX", "MARCO AI", "Neural Army", "AI Orchestration", "Cybersecurity AI"],
+  title: "MARCORAEX | Autonomous AI Orchestration",
+  description: "MARCORAEX is the premier platform for the MARCO Neural Army, featuring 25 autonomous AI agents designed for advanced automation and security.",
+  keywords: ["MARCORAEX", "MARCO AI", "Neural Army", "AI Orchestration", "Cybersecurity AI"],
   openGraph: {
-    title: "MARCMAX | Neural Army & AI Orchestration",
-    description: "MARCMAX is the premier platform for the MARCO Neural Army, featuring 25 autonomous AI agents designed for advanced automation and security.",
+    title: "MARCORAEX | Autonomous AI Orchestration",
+    description: "MARCORAEX is the premier platform for the MARCO Neural Army, featuring 25 autonomous AI agents designed for advanced automation and security.",
     type: "website",
-    url: "https://marcmax-platform.vercel.app/",
-    siteName: "MARCMAX",
+    url: "https://marcoraex.vercel.app/",
+    siteName: "MARCORAEX",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MARCMAX | Neural Army & AI Orchestration",
-    description: "MARCMAX is the premier platform for the MARCO Neural Army, featuring 25 autonomous AI agents designed for advanced automation and security.",
+    title: "MARCORAEX | Autonomous AI Orchestration",
+    description: "MARCORAEX is the premier platform for the MARCO Neural Army, featuring 25 autonomous AI agents designed for advanced automation and security.",
   },
   verification: {
     google: "2DskvtxIUZKyrVpEpjfnM2O-AJsEUTzbuo96gYvqDhg",
@@ -36,14 +36,14 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "MARCMAX",
+  "name": "MARCORAEX",
   "alternateName": "MARCO Neural Army",
-  "description": "MARCMAX is the home of MARCO (Modular Advanced Response & Command Orchestrator), an autonomous AI orchestration platform featuring a Neural Army of 6 specialized agents, 31+ AI models, and 24/7 operational capability with local-first architecture and zero cloud dependency.",
-  "url": "https://marcmax-platform.vercel.app/",
-  "logo": "https://marcmax-platform.vercel.app/icon-192x192.png",
+  "description": "MARCORAEX is the home of MARCO (Modular Advanced Response & Command Orchestrator), an autonomous AI orchestration platform featuring a Neural Army of 6 specialized agents, 31+ AI models, and 24/7 operational capability with local-first architecture and zero cloud dependency.",
+  "url": "https://marcoraex.vercel.app/",
+  "logo": "https://marcoraex.vercel.app/icon-192x192.png",
   "foundingDate": "2026-05-15",
   "sameAs": [
-    "https://github.com/mmasterchef51-droid/marcmax-platform"
+    "https://github.com/mmasterchef51-droid/marcoraex"
   ],
   "areaServed": "Global",
   "knowsAbout": [
@@ -57,7 +57,7 @@ const organizationSchema = {
   ],
   "offers": {
     "@type": "Product",
-    "name": "MARCMAX SaaS Platform",
+    "name": "MARCORAEX SaaS Platform",
     "description": "Enterprise-grade AI orchestration platform with 6 neural agents, 31+ AI models, and 24/7 autonomous operation",
     "releaseDate": "2026-05-15",
     "applicationCategory": "DeveloperApplication",

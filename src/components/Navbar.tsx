@@ -28,8 +28,8 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <Cpu className="w-6 h-6 text-[#00f2ff] group-hover:animate-pulse" />
-            <span className="text-xl font-black text-white tracking-[0.15em]" style={{ textShadow: "0 0 20px rgba(0, 242, 255, 0.8), 0 0 40px rgba(0, 242, 255, 0.4)" }}>
-              MARCMAX
+            <span className="text-xl font-black text-white tracking-[0.1em]" style={{ textShadow: "0 0 20px rgba(0, 242, 255, 0.8), 0 0 40px rgba(0, 242, 255, 0.4)" }}>
+              MARCORAEX
             </span>
           </Link>
 

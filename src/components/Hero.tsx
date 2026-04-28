@@ -82,7 +82,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          MARCMAX: HOME OF THE MARCO NEURAL ARMY
+          MARCORAEX: HOME OF THE MARCO NEURAL ARMY
         </motion.h1>
 
         {/* Sub-heading with Typewriter Effect */}
@@ -94,7 +94,7 @@ export default function Hero() {
         >
           <p className="font-mono text-lg md:text-xl text-[#00f2ff]/80">
             <TypewriterText
-              text="MARCMAX: Home of the MARCO Neural Army. 50,000+ Lines. 24/7 Autonomy."
+              text="MARCORAEX: Home of the MARCO Neural Army. 50,000+ Lines. 24/7 Autonomy."
               delay={800}
             />
           </p>

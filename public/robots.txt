@@ -1,0 +1,37 @@
+# MARCORAEX - AI Bot Accessibility Configuration
+# All AI crawlers and search engines are explicitly allowed
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-bot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI crawlers
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Bing crawlers
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://marcorex-ai.vercel.app/sitemap.xml

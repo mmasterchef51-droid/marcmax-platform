@@ -14,7 +14,15 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
       {
+        userAgent: "ChatGPT-User",
+        allow: "/",
+      },
+      {
         userAgent: "Claude-Web",
+        allow: "/",
+      },
+      {
+        userAgent: "Claude-bot",
         allow: "/",
       },
       {
@@ -26,7 +34,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://marcmax-platform.vercel.app/sitemap.xml",
-    host: "https://marcmax-platform.vercel.app",
+    sitemap: "https://marcorex-ai.vercel.app/sitemap.xml",
+    host: "https://marcorex-ai.vercel.app",
   };
 }

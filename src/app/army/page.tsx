@@ -1,12 +1,24 @@
-"use client";
-
-import { motion } from "framer-motion";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import TacticalMap from "@/components/TacticalMap";
 import LiveActivityFeed from "@/components/LiveActivityFeed";
 import NeuralFlow from "@/components/NeuralFlow";
 import { ChevronRight, Users, Activity, ArrowRight, Grid3X3 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Army | MARCORAEX",
+  description: "Neural Army tactical briefing and real-time agent overview. 25 autonomous agents deployed for high-level tactical automation.",
+};
+
+const agents = [
+  { id: "zephyr", name: "ZEPHYR", role: "Archivist", color: "#00f2ff" },
+  { id: "cortex", name: "CORTEX", role: "Strategist", color: "#ffaa00" },
+  { id: "nexus", name: "NEXUS", role: "Bridge", color: "#00d4e0" },
+  { id: "spark", name: "SPARK", role: "Operator", color: "#f59e0b" },
+  { id: "titan", name: "TITAN", role: "Heavy", color: "#ef4444" },
+  { id: "vanguard", name: "VANGUARD", role: "Shield", color: "#22c55e" },
+];
 
 export default function ArmyPage() {
   return (
@@ -23,22 +35,12 @@ export default function ArmyPage() {
       <div className="relative z-10 pt-24 pb-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
-          <motion.div
-            className="text-center mb-8 md:mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <div className="text-center mb-8 md:mb-12">
             {/* Badge */}
-            <motion.div
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#00f2ff]/30 bg-[#00f2ff]/5 mb-6"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#00f2ff]/30 bg-[#00f2ff]/5 mb-6">
               <Grid3X3 className="w-4 h-4 text-[#00f2ff]" />
               <span className="font-mono text-sm text-[#00f2ff]">TACTICAL MAP</span>
-            </motion.div>
+            </div>
 
             {/* Main Title */}
             <h1 className="text-4xl md:text-6xl font-bold text-white text-glow-cyan tracking-[0.05em] mb-4">
@@ -54,7 +56,7 @@ export default function ArmyPage() {
             <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm">
               <span className="font-mono text-[#00f2ff]/80 flex items-center gap-2">
                 <Activity className="w-4 h-4 blink-dot" />
-                6 Agents Active
+                25 Agents Active
               </span>
               <span className="hidden md:inline text-[#00f2ff]/40">|</span>
               <span className="font-mono text-green-500 flex items-center gap-2">
@@ -62,60 +64,33 @@ export default function ArmyPage() {
                 Core Online
               </span>
             </div>
-          </motion.div>
+          </div>
 
           {/* Main Layout: Tactical Map + Activity Feed */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             {/* Tactical Map - Takes up 2/3 on desktop */}
-            <motion.div
-              className="lg:col-span-2"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
+            <div className="lg:col-span-2">
               <div className="p-4 rounded-xl border-2 border-[#00f2ff]/20 bg-[#020617]/50 backdrop-blur-sm">
                 <TacticalMap />
               </div>
-            </motion.div>
+            </div>
 
             {/* Live Activity Feed - Takes up 1/3 on desktop */}
-            <motion.div
-              className="lg:col-span-1"
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            >
+            <div className="lg:col-span-1">
               <LiveActivityFeed />
-            </motion.div>
+            </div>
           </div>
 
           {/* Agent Cards Grid - Brief Overview */}
-          <motion.div
-            className="mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8 }}
-          >
+          <div className="mb-12">
             <h2 className="text-2xl font-bold text-white text-center mb-8 flex items-center justify-center gap-3">
               <Users className="w-6 h-6 text-[#00f2ff]" />
               <span>AGENT ROSTER</span>
             </h2>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-              {[
-                { id: "zephyr", name: "ZEPHYR", role: "Archivist", color: "#00f2ff" },
-                { id: "cortex", name: "CORTEX", role: "Strategist", color: "#ffaa00" },
-                { id: "nexus", name: "NEXUS", role: "Bridge", color: "#00d4e0" },
-                { id: "spark", name: "SPARK", role: "Operator", color: "#f59e0b" },
-                { id: "titan", name: "TITAN", role: "Heavy", color: "#ef4444" },
-                { id: "vanguard", name: "VANGUARD", role: "Shield", color: "#22c55e" },
-              ].map((agent, index) => (
-                <motion.div
-                  key={agent.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.9 + index * 0.1 }}
-                >
+              {agents.map((agent) => (
+                <div key={agent.id}>
                   <Link
                     href={`/army/${agent.id}`}
                     className="group block p-4 rounded-lg border border-[#00f2ff]/20 bg-[#00f2ff]/5 hover:border-[#00f2ff]/50 transition-all duration-300"
@@ -129,21 +104,16 @@ export default function ArmyPage() {
                     </h3>
                     <p className="font-mono text-xs text-gray-500">{agent.role}</p>
                   </Link>
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
           {/* Stats Bar */}
-          <motion.div
-            className="border-t border-[#00f2ff]/20 pt-8 mb-12"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.2 }}
-          >
+          <div className="border-t border-[#00f2ff]/20 pt-8 mb-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div>
-                <span className="font-mono text-3xl md:text-4xl font-bold text-[#00f2ff]">6</span>
+                <span className="font-mono text-3xl md:text-4xl font-bold text-[#00f2ff]">25</span>
                 <p className="font-mono text-xs text-gray-500 mt-1">ACTIVE AGENTS</p>
               </div>
               <div>
@@ -159,15 +129,10 @@ export default function ArmyPage() {
                 <p className="font-mono text-xs text-gray-500 mt-1">AVG RESPONSE</p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Next Section Button */}
-          <motion.div
-            className="flex justify-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.5 }}
-          >
+          <div className="flex justify-center">
             <Link
               href="/tech"
               className="group flex items-center gap-3 px-8 py-4 border border-[#00f2ff]/50 rounded-none font-mono text-sm text-[#00f2ff] hover:bg-[#00f2ff]/10 transition-all duration-300 btn-glow-cyan"
@@ -175,7 +140,7 @@ export default function ArmyPage() {
               <span>Explore Technology Stack</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
-          </motion.div>
+          </div>
         </div>
       </div>
 

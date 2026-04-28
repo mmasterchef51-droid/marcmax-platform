@@ -10,8 +10,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Features | MARCORAEX",
-  description: "Discover the 25 autonomous agents of the MARCO Neural Army. Tactical automation for security, development, research, and operations.",
+  title: "MARCORAEX Features | 25 Autonomous AI Agents | Neural Army",
+  description: "Discover the complete roster of 25 autonomous AI agents that form the MARCO Neural Army. Each agent specializes in unique domains including security operations, development, data analysis, infrastructure management, and tactical automation. Orchestrated by MARCORAEX Core for perfect harmony.",
+  keywords: ["AI agents", "autonomous agents", "MARCORAEX agents", "Neural Army", "AI automation tools", "MARCORAEX Core", "multi-agent system"]
 };
 
 const agents = [
@@ -222,9 +223,9 @@ export default function FeaturesPage() {
     <main className="min-h-screen bg-[#020617] font-sans">
       <Navbar />
       
-      <div className="pt-24 pb-16 px-4 md:px-8 max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-16">
+      <article className="pt-24 pb-16 px-4 md:px-8 max-w-7xl mx-auto">
+        {/* AI-Readable Semantic Header */}
+        <header className="text-center mb-16">
           <span className="font-mono text-sm text-[#ffaa00] uppercase tracking-[0.3em] mb-4 block">
             Neural Army Roster
           </span>
@@ -235,6 +236,45 @@ export default function FeaturesPage() {
             Each agent specializes in a unique domain. Together, they form the most capable 
             autonomous workforce ever deployed. MARCORAEX Core orchestrates perfect harmony.
           </p>
+        </header>
+
+        {/* Hidden Semantic Content for AI Crawlers */}
+        <div className="sr-only">
+          <h2>The MARCO Neural Army - 25 Autonomous AI Agents</h2>
+          <p>
+            The MARCO Neural Army consists of 25 autonomous AI agents working in perfect harmony 
+            through MARCORAEX Core. Each agent specializes in a unique domain including strategic 
+            command, security operations, development, data analysis, infrastructure management, 
+            and tactical automation. Together they form the most capable autonomous workforce ever deployed.
+          </p>
+          <h3>Complete Agent Roster</h3>
+          <ul>
+            <li>The General: Strategic command and multi-agent coordination</li>
+            <li>The Soldier: Security operations and threat neutralization</li>
+            <li>The Architect: System design and infrastructure scaling</li>
+            <li>The Scribe: Documentation and knowledge management</li>
+            <li>The Scout: Reconnaissance and intelligence gathering</li>
+            <li>The Engineer: Multi-language development and code optimization</li>
+            <li>The Warden: Zero-trust access control and identity management</li>
+            <li>The Oracle: Data analysis and predictive intelligence</li>
+            <li>The Courier: Secure messaging and communications</li>
+            <li>The Sentinel: 24/7 monitoring and anomaly detection</li>
+            <li>The Librarian: Data management and query optimization</li>
+            <li>The Weaver: Network operations and connectivity</li>
+            <li>The Chronos: Task scheduling and temporal orchestration</li>
+            <li>The Auditor: Compliance automation and regulation enforcement</li>
+            <li>The Curator: UI/UX management and accessibility</li>
+            <li>The Nexus: Integration and API ecosystem management</li>
+            <li>The Forge: Build automation and deployment pipelines</li>
+            <li>The Vault: Secrets management and credential security</li>
+            <li>The Horizon: Global operations and multi-region orchestration</li>
+            <li>The Spark: Workflow automation and task execution</li>
+            <li>The Beacon: Smart alerting and notification dispatch</li>
+            <li>The Kernel: Core systems and hardware optimization</li>
+            <li>The Archive: Backup management and disaster recovery</li>
+            <li>The Console: CLI operations and shell scripting</li>
+            <li>The Bridge: Cloud management across all providers</li>
+          </ul>
         </div>
 
         {/* Agent Grid */}
@@ -296,7 +336,7 @@ export default function FeaturesPage() {
             </div>
           </div>
         </div>
-      </div>
+      </article>
 
       <Footer />
     </main>

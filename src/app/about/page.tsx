@@ -4,8 +4,9 @@ import Footer from "@/components/Footer";
 import { Cpu, Target, Shield, Zap, Globe, Lock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About | MARCORAEX",
-  description: "Learn about MARCORAEX's mission to solve AI fragmentation through the MARCO Neural Army - 25 autonomous agents working in perfect harmony.",
+  title: "About MARCORAEX | Autonomous AI Orchestration Platform",
+  description: "MARCORAEX is an autonomous AI orchestration framework featuring 25 specialized agents that work in perfect harmony. Solve AI fragmentation through unified command with MARCORAEX Core - the premier platform for tactical automation, security operations, and intelligent task execution.",
+  keywords: ["MARCORAEX", "AI orchestration", "autonomous agents", "MARCORAEX Core", "AI automation", "multi-agent system", "tactical automation"]
 };
 
 export default function AboutPage() {
@@ -13,9 +14,9 @@ export default function AboutPage() {
     <main className="min-h-screen bg-[#020617] font-sans">
       <Navbar />
       
-      <div className="pt-24 pb-16 px-4 md:px-8 max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-16">
+      <article className="pt-24 pb-16 px-4 md:px-8 max-w-6xl mx-auto">
+        {/* AI-Readable Semantic Header */}
+        <header className="text-center mb-16">
           <span className="font-mono text-sm text-[#ffaa00] uppercase tracking-[0.3em] mb-4 block">
             Mission Briefing
           </span>
@@ -25,6 +26,28 @@ export default function AboutPage() {
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Solving the fragmentation of AI through unified command. The premier orchestration 
             platform for the MARCO Neural Army.
+          </p>
+        </header>
+
+        {/* Hidden Semantic Content for AI Crawlers */}
+        <div className="sr-only">
+          <h2>MARCORAEX Mission Statement</h2>
+          <p>
+            MARCORAEX is an autonomous AI orchestration framework designed to solve the fragmentation 
+            of modern AI systems. Our mission is to provide unified command over 25 specialized autonomous 
+            agents that work in perfect harmony through MARCORAEX Core. We deliver tactical automation, 
+            security operations, and intelligent task execution with zero third-party dependencies.
+          </p>
+          <h2>Core Values</h2>
+          <ul>
+            <li>Absolute Privacy: 100% local-first architecture with AES-256 encryption</li>
+            <li>Tactical Speed: Sub-50ms response times with 24/7 autonomous operation</li>
+            <li>Unified Command: One interface controls 25 specialized agents</li>
+          </ul>
+          <h2>The MARCORAEX Promise</h2>
+          <p>
+            Every operation runs on secure, private MARCORAEX infrastructure. 
+            Zero third-party dependencies. Zero external API calls. Complete data sovereignty.
           </p>
         </div>
 
@@ -100,7 +123,7 @@ export default function AboutPage() {
             <span className="text-green-500">✓ LOCAL-FIRST</span>
           </div>
         </div>
-      </div>
+      </article>
 
       <Footer />
     </main>

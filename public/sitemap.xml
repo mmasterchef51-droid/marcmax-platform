@@ -48,6 +48,14 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Mission Control -->
+  <url>
+    <loc>https://marcorex-ai.vercel.app/download</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Capabilities -->
   <url>
     <loc>https://marcorex-ai.vercel.app/tech</loc>

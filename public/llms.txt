@@ -58,6 +58,10 @@ The MARCO Neural Army consists of 25 autonomous agents working in perfect harmon
 ### Neural Army Section
 - `/army` - Neural Army briefing page with tactical map and agent overview
 
+### Mission Control
+- `/download` - Download Vault: High-security file extraction portal with tier-based access control, scanning animations, and Usage Shield overlay
+- `/changelog` - System evolution timeline and version history
+
 ### Capabilities
 - `/tech` - MARCORAEX Capabilities Core with proprietary neural engine details
 

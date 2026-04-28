@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commander's Portal | MARCORAEX</title>
+  <meta name="description" content="Secure pre-registration for the MARCORAEX Commander's Portal. Personalized intelligence dashboard for verified SaaS subscribers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scan-bar"></div>
+  <div class="fixed inset-0 matrix-bg pointer-events-none z-0"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-content">
+        <a href="index.html" class="navbar-logo">
+          <svg class="navbar-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+          <span class="navbar-logo-text">MARCORAEX</span>
+        </a>
+        <div class="navbar-links">
+          <a href="index.html" class="navbar-link">Home</a>
+          <a href="about.html" class="navbar-link">About</a>
+          <a href="features.html" class="navbar-link">Features</a>
+          <a href="download.html" class="navbar-link">Download</a>
+          <a href="portal.html" class="navbar-link">Portal</a>
+        </div>
+        <div class="navbar-status"><span class="status-dot"></span><span class="status-text">ONLINE</span></div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="index.html" class="mobile-menu-link" onclick="closeMobileMenu()">Home</a>
+        <a href="about.html" class="mobile-menu-link" onclick="closeMobileMenu()">About</a>
+        <a href="features.html" class="mobile-menu-link" onclick="closeMobileMenu()">Features</a>
+        <a href="download.html" class="mobile-menu-link" onclick="closeMobileMenu()">Download</a>
+        <a href="portal.html" class="mobile-menu-link" onclick="closeMobileMenu()">Portal</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="relative z-10 min-h-screen bg-[#020617]">
+    <div class="pt-24 pb-16 px-4 md:px-8">
+      <div class="max-w-4xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="flex items-center gap-2 text-sm font-mono text-gray-500 mb-8">
+          <a href="index.html" class="hover:text-[#00f2ff] transition-colors">HOME</a>
+          <span>/</span>
+          <span class="text-[#00f2ff]">PORTAL</span>
+        </nav>
+
+        <!-- Header -->
+        <div class="text-center mb-12 animate-fade-in">
+          <div class="flex items-center justify-center gap-3 mb-4">
+            <svg class="w-8 h-8 text-[#00f2ff]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span class="font-mono text-[#00f2ff] tracking-wider">SECURE ACCESS</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-white text-glow-cyan mb-4">COMMANDER'S PORTAL</h1>
+          <p class="text-gray-400">Personalized intelligence dashboard for verified SaaS subscribers.</p>
+        </div>
+
+        <!-- Main Content Card -->
+        <div class="relative p-8 md:p-12 rounded-2xl border-2 border-[#00f2ff]/40 bg-gradient-to-b from-[#00f2ff]/10 to-[#020617] backdrop-blur-sm">
+          <!-- Corner Accents -->
+          <div class="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-[#00f2ff]/50"></div>
+          <div class="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-[#00f2ff]/50"></div>
+          <div class="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-[#00f2ff]/50"></div>
+          <div class="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-[#00f2ff]/50"></div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Left: Access Info -->
+            <div class="space-y-6">
+              <!-- Warning -->
+              <div class="flex items-center gap-4 p-4 rounded-lg border border-red-500/30 bg-red-500/10">
+                <svg class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <div>
+                  <h2 class="text-xl font-bold text-red-500">UNAUTHORIZED ACCESS</h2>
+                  <p class="text-sm text-gray-400">Commander Portal access requires verified SaaS subscription.</p>
+                </div>
+              </div>
+
+              <!-- Info -->
+              <div class="p-4 rounded-lg border border-[#00f2ff]/20 bg-[#00f2ff]/5">
+                <p class="text-gray-300 mb-2">Access will be granted to all verified subscribers on <span class="text-[#ffaa00] font-semibold">May 15, 2026</span>.</p>
+                <p class="text-sm text-gray-500">Pre-register now to secure your position on the waitlist.</p>
+              </div>
+
+              <!-- Biometric -->
+              <div class="flex items-center gap-3 text-sm text-gray-400">
+                <svg class="w-5 h-5 text-[#00f2ff]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 0-7.07 17.07l7.07-7.07 7.07 7.07A10 10 0 0 0 12 2z"/><path d="M8 11h8v2H8z"/></svg>
+                <span>Biometric verification required at launch</span>
+              </div>
+            </div>
+
+            <!-- Right: Registration Form -->
+            <div class="border-l border-[#00f2ff]/20 md:pl-8">
+              <h3 class="text-xl font-bold text-white mb-6">PRE-REGISTER</h3>
+              <form id="portal-form" onsubmit="return handlePortalSubmit(event)">
+                <div class="form-group">
+                  <label class="form-label">Commander Codename</label>
+                  <input type="text" class="form-input" placeholder="Enter your codename" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Secure Email</label>
+                  <input type="email" class="form-input" placeholder="commander@marcoraex.ai" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Current Tier</label>
+                  <select class="form-input" required>
+                    <option value="">Select your tier</option>
+                    <option value="recruit">Recruit (Trial)</option>
+                    <option value="soldier">Soldier</option>
+                    <option value="captain">Captain</option>
+                    <option value="elite">Elite</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-full">
+                  <span>REGISTER FOR ACCESS</span>
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Status Info -->
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="p-4 rounded-lg border border-[#00f2ff]/20 bg-[#00f2ff]/5 text-center">
+            <svg class="w-5 h-5 text-[#00f2ff] mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span class="font-mono text-sm text-white">AES-256</span>
+            <p class="font-mono text-[10px] text-gray-500">Encryption</p>
+          </div>
+          <div class="p-4 rounded-lg border border-[#00f2ff]/20 bg-[#00f2ff]/5 text-center">
+            <svg class="w-5 h-5 text-[#00f2ff] mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span class="font-mono text-sm text-white">2FA</span>
+            <p class="font-mono text-[10px] text-gray-500">Required</p>
+          </div>
+          <div class="p-4 rounded-lg border border-[#ffaa00]/20 bg-[#ffaa00]/5 text-center">
+            <svg class="w-5 h-5 text-[#ffaa00] mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6-6-6M12 19l7-7-7-7"/></svg>
+            <span class="font-mono text-sm text-white">May 15</span>
+            <p class="font-mono text-[10px] text-gray-500">Launch</p>
+          </div>
+          <div class="p-4 rounded-lg border border-green-500/20 bg-green-500/5 text-center">
+            <svg class="w-5 h-5 text-green-500 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span class="font-mono text-sm text-white">Verified</span>
+            <p class="font-mono text-[10px] text-gray-500">SaaS Only</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-signature">
+      <div class="footer-signature-content">
+        <div class="footer-system-info">
+          <svg class="footer-system-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+          <span class="footer-system-text">MARCORAEX SYSTEMS v7.0.0</span>
+        </div>
+        <div class="footer-protocol"><span class="status-dot"></span>SECURE PROTOCOL ACTIVE</div>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <div class="footer-nav-content">
+        <div class="footer-nav-top">
+          <span class="footer-logo">MARCORAEX</span>
+          <nav class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="features.html" class="footer-link">Features</a>
+            <a href="download.html" class="footer-link">Download</a>
+            <a href="portal.html" class="footer-link">Portal</a>
+          </nav>
+        </div>
+        <p class="footer-copyright">© 2026 MARCORAEX Systems. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    function handlePortalSubmit(e) {
+      e.preventDefault();
+      alert('Registration submitted!\n\nYou have been added to the Commander Portal waitlist. Access will be granted on May 15, 2026.');
+      return false;
+    }
+  </script>
+</body>
+</html>

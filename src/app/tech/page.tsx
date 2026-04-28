@@ -8,7 +8,7 @@ import LanguageTrinity from "@/components/LanguageTrinity";
 import ModelRegistry from "@/components/ModelRegistry";
 import SystemCapabilities from "@/components/SystemCapabilities";
 import HardwareGovernor from "@/components/HardwareGovernor";
-import { Cog, Shield, ArrowRight, Cpu } from "lucide-react";
+import { Cog, Shield, ArrowRight, Cpu, Lock, Server } from "lucide-react";
 
 // Diagnostic Scan Line Component
 function DiagnosticScan({ delay = 0 }: { delay?: number }) {
@@ -33,7 +33,7 @@ function DiagnosticScan({ delay = 0 }: { delay?: number }) {
   );
 }
 
-export default function TechPage() {
+export default function CapabilitiesPage() {
   return (
     <main className="min-h-screen bg-[#020617] font-sans overflow-x-hidden">
       {/* Navbar */}
@@ -66,21 +66,23 @@ export default function TechPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <Cog className="w-4 h-4 text-[#00f2ff] animate-spin-slow" />
+                <Lock className="w-4 h-4 text-[#00f2ff]" />
                 <span className="font-mono text-sm text-[#00f2ff]">
-                  SYSTEM ARCHITECTURE
+                  PRIVATE & SECURE
                 </span>
               </motion.div>
 
               {/* Main Title */}
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white text-glow-cyan tracking-[0.05em] mb-6">
-                THE ENGINE ROOM
+                CAPABILITIES CORE
               </h1>
 
               {/* Subtitle */}
-              <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
-                Polyglot architecture optimized for autonomous AI orchestration.
-                Multi-language core with intelligent model routing.
+              <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-4">
+                MARCORAEX proprietary neural architecture. All processing occurs on secure, private MARCORAEX servers.
+              </p>
+              <p className="text-sm text-[#00f2ff]/70 font-mono max-w-2xl mx-auto mb-8">
+                Zero third-party dependencies. Zero external API calls. 100% data sovereignty.
               </p>
 
               {/* System Stats */}
@@ -101,10 +103,10 @@ export default function TechPage() {
                 <div className="h-10 w-px bg-[#00f2ff]/20" />
                 <div className="text-center">
                   <span className="font-mono text-3xl font-bold text-[#ffaa00]">
-                    31
+                    31+
                   </span>
                   <p className="font-mono text-xs text-gray-500 mt-1">
-                    AI MODELS
+                    NEURAL CONFIGURATIONS
                   </p>
                 </div>
                 <div className="h-10 w-px bg-[#00f2ff]/20" />
@@ -122,9 +124,23 @@ export default function TechPage() {
                     100%
                   </span>
                   <p className="font-mono text-xs text-gray-500 mt-1">
-                    PROTECTED
+                    PRIVATE
                   </p>
                 </div>
+              </motion.div>
+
+              {/* Private Server Banner */}
+              <motion.div
+                className="mt-8 inline-flex items-center gap-3 px-6 py-3 rounded-lg border border-green-500/30 bg-green-500/10"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.7 }}
+              >
+                <Server className="w-5 h-5 text-green-500" />
+                <span className="font-mono text-sm text-green-500">
+                  ALL MODELS RUN ON SECURE, PRIVATE MARCORAEX SERVERS
+                </span>
+                <Lock className="w-4 h-4 text-green-500" />
               </motion.div>
             </motion.div>
 
@@ -149,7 +165,7 @@ export default function TechPage() {
         {/* Language Trinity Section */}
         <LanguageTrinity />
 
-        {/* Model Registry Section */}
+        {/* Neural Engine Section (formerly Model Registry) */}
         <ModelRegistry />
 
         {/* System Capabilities Section */}
@@ -176,10 +192,10 @@ export default function TechPage() {
               </div>
 
               <p className="font-mono text-2xl md:text-3xl font-bold text-white mb-2">
-                SYSTEM ARCHITECTURE VERSION 7.0.0
+                MARCORAEX NEURAL ARCHITECTURE v7.0.0
               </p>
               <p className="font-mono text-sm text-gray-500">
-                VERIFIED PRODUCTION READY
+                PRIVATE • SECURE • SOVEREIGN
               </p>
             </motion.div>
 
